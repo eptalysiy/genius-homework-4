@@ -1,0 +1,48 @@
+.button {
+  padding: 16px 32px;
+  border-radius: 32px;
+  font-size: 18px;
+  background-color: var(--primary-color-blue-light);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  border: 2px solid var(--primary-color-blue-light);
+
+  &:hover {
+    color: var(--primary-color-blue-dark);
+    background-color: white;
+  }
+
+  &__open {
+    width: 227.2px;
+    height: 56.2px;
+  }
+  
+}
+
+.slider-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--primary-color-blue-dark);
+  fill: var(--primary-color-blue-dark);
+  background-color: transparent;
+   @media screen and (max-width: 480px) {
+    display: none;
+    }
+  &:hover {
+    fill: #fff;
+    background: var(--primary-color-blue-light);
+    border: none;
+  }
+}
+
+.next {
+  transform: rotate(180deg);
+}

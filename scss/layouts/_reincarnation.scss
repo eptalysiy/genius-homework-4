@@ -1,0 +1,70 @@
+.reincarnation {
+  &__container {
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    display: none;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      width: 499px;
+      height: 695px;
+    }
+  }
+
+  &__img > .after {
+    order: 1;
+    align-self: flex-end;
+  }
+
+  &__title-narrow {
+    width: 518px;
+    margin-bottom: 40px;
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+     @media screen and (max-width: 480px) {
+    font-size: 40px;
+    }
+  }
+
+  &__title-narrow .accent {
+    color: var(--primary-color-blue-light);
+  }
+
+  &__title {
+    min-width: 500px;
+    margin-right: 0;
+    @media screen and (min-width: 1280px) {
+      width: 709px;
+    }
+  }
+
+  &__section-text {
+    font-size: 22px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    @media screen and (max-width: 480px) {
+    font-size: 18px;
+    }
+  }
+
+  &__section-text .font {
+    font-weight: 600;
+  }
+}
+
+.before,
+.after {
+  border-radius: 172px;
+}

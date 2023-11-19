@@ -1,0 +1,123 @@
+.footer {
+  padding: 56px 0;
+  position: relative;
+  background: #011c44;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 550px;
+
+  &::before {
+    position: absolute;
+    background-image: url(../images/cosmetics.png);
+    width: 250px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    content: '';
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+  &__container {
+    display: flex;
+    gap: 20px;
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 42px;
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  &__li {
+    padding-bottom: 16px;
+  }
+  &__li-contact {
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+  &__link:hover {
+    color: var(--primary-color-blue-light);
+  }
+
+  &__address-li {
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__address-li,
+  &__privacy {
+    flex-grow: 1;
+  }
+
+  &__privacy {
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__privacy-2 {
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__privacy-1 {
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+  &__social-networks {
+    display: flex;
+    gap: 24px;
+  }
+  &__adress-icon {
+    fill: var(--primary-color-light);
+  }
+  &__adress-icon:hover {
+    fill: var(--primary-color-blue-light);
+  }
+}

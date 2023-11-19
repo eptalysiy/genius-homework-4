@@ -1,0 +1,65 @@
+.location {
+  min-width: 550px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 94px;
+    min-width: 550px;
+  }
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+
+  &__modal {
+    padding: 48px 56px;
+    background-color: var(--primary-color-blue-dark);
+    border-radius: 32px;
+    width: 423px;
+    height: 481px;
+    color: var(--primary-secondary-color-grey-light);
+    background-image: url(../images/bg_modal.png);
+
+    @media screen and (max-width: 768px) {
+      order: -1;
+    }
+  }
+
+  &__form-input {
+    padding-bottom: 16px;
+  }
+
+  &__questionnaire {
+    margin: 0 auto;
+    padding-bottom: 32px;
+    max-width: 280px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  &__btn-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__map {
+    width: 100%;
+    border: none;
+    height: 232px;
+    @media screen and (min-width: 768px) {
+      width: 605px;
+      height: 480px;
+      border-radius: 32px;
+    }
+  }
+}

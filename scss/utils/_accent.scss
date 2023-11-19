@@ -1,0 +1,13 @@
+.accent {
+  color: var(--primary-color-blue-light);
+}
+.section__title {
+  margin-bottom: 48px;
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+   @media screen and (max-width: 480px) {
+    font-size: 40px;
+    }
+}
